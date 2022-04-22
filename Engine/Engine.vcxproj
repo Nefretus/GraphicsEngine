@@ -64,7 +64,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Glad\include;$(SolutionDir)Engine;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Glad\include;$(SolutionDir)Engine;$(SolutionDir)Engine\OpenGL;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>CompiledHeader.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -82,7 +82,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Glad\include;$(SolutionDir)Engine;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Glad\include;$(SolutionDir)Engine;$(SolutionDir)Engine\OpenGL;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>CompiledHeader.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -100,12 +100,45 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompiledHeader.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="Core\Application.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Core\stb_image.cpp" />
+    <ClCompile Include="Core\Window.cpp" />
+    <ClCompile Include="OpenGL\BufferLayout.cpp" />
+    <ClCompile Include="OpenGL\ErrorCheckMacro.cpp" />
+    <ClCompile Include="OpenGL\IndexBuffer.cpp" />
+    <ClCompile Include="OpenGL\Shader.cpp" />
+    <ClCompile Include="OpenGL\Texture.cpp" />
+    <ClCompile Include="OpenGL\VertexArray.cpp" />
+    <ClCompile Include="OpenGL\VertexBuffer.cpp" />
+    <ClCompile Include="Renderer\Camera.cpp" />
+    <ClCompile Include="Renderer\Renderer.cpp" />
+    <ClCompile Include="Renderer\TextureMenager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CompiledHeader.h" />
+    <ClInclude Include="Core\Application.h" />
+    <ClInclude Include="Core\DllMacro.h" />
+    <ClInclude Include="Core\EntryPoint.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Core\KeyCodes.h" />
+    <ClInclude Include="Core\MouseCodes.h" />
+    <ClInclude Include="Core\Window.h" />
     <ClInclude Include="Engine.h" />
-    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="Events\Event.h" />
+    <ClInclude Include="Events\KeyEvent.h" />
+    <ClInclude Include="Events\MouseEvent.h" />
+    <ClInclude Include="Events\WindowsEvent.h" />
+    <ClInclude Include="OpenGL\BufferLayout.h" />
+    <ClInclude Include="OpenGL\ErrorCheckMacro.h" />
+    <ClInclude Include="OpenGL\IndexBuffer.h" />
+    <ClInclude Include="OpenGL\Shader.h" />
+    <ClInclude Include="OpenGL\Texture.h" />
+    <ClInclude Include="OpenGL\VertexArray.h" />
+    <ClInclude Include="OpenGL\VertexBuffer.h" />
+    <ClInclude Include="Renderer\Camera.h" />
+    <ClInclude Include="Renderer\Renderer.h" />
+    <ClInclude Include="Renderer\TextureMenager.h" />
     <ClInclude Include="src\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
