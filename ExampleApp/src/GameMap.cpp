@@ -52,8 +52,8 @@ bool GameMap::CheckCollision() {
         else {
             bool xAxisOverlap = (player.GetPos().x + player.GetSize().x >= pipes[i].GetPos().x + 15.0f)
                 && (pipes[i].GetPos().x + 15.0f + pipes[i].GetSize().x >= player.GetPos().x);
-            bool yAxisOverlap = player.GetPos().y + player.GetSize().y >= pipes[i].GetPos().y + 15.0f
-                && ((pipes[i].GetPos().y + 15.0f + pipes[i].GetSize().y) >= player.GetPos().y);
+            bool yAxisOverlap = player.GetPos().y + player.GetSize().y >= pipes[i].GetPos().y + 18.0f
+                && ((pipes[i].GetPos().y + 18.0f + pipes[i].GetSize().y) >= player.GetPos().y);
             if (xAxisOverlap && yAxisOverlap)
                 return true;
             else

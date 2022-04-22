@@ -18,9 +18,8 @@ namespace Engine {
         glDeleteProgram(program);
     }
 
-    const char* Shader::getShadersDirectory() {
-       // return "Resources/shaders/Shader.shader";
-        return R"(C:\\Users\MateuszKomp\source\repos\Nefretus\Engine\Resources\shaders\Shader.shader)";
+    std::string Shader::getShadersDirectory() {
+        return std::string(_SOLUTIONDIR + std::string(R"(Resources\shaders\Shader.shader)"));
     }
 
     ShaderSource Shader::loadShaders() const {

@@ -13,7 +13,7 @@ namespace Engine {
 	public:
 		Shader(const std::string& filePath = getShadersDirectory());
 		~Shader();
-		static const char* getShadersDirectory();
+		static std::string getShadersDirectory();
 		void bind() const;
 		void unbind() const;
 		GLint getUniformLocation(const std::string& name) const;
