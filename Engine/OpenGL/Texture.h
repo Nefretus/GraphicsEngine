@@ -12,7 +12,7 @@ namespace Engine {
 		int getWidth() const { return width; }
 		std::string getName() const { return name; }
 
-		static std::string getTexturesDirectory() { return R"(C:\\Users\MateuszKomp\source\repos\Nefretus\Engine\Resources\textures\)"; }
+		static std::string getTexturesDirectory() { return std::string(_SOLUTIONDIR + std::string(R"(Resources\textures\)")); }
 	private:
 		int height, width, nrChannels;
 		std::string filePath, name;
