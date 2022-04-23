@@ -35,8 +35,8 @@
 #*.sqlproj   merge=binary
 #*.wwaproj   merge=binary
 
-*.cpp linguist-detectable=true
-*.* linguist-detectable=false
+#*.cpp linguist-detectable=true
+#*.* linguist-detectable=false
 
 ###############################################################################
 # behavior for image files
