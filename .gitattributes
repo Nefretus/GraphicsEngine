@@ -36,7 +36,7 @@
 #*.wwaproj   merge=binary
 
 *.cpp linguist-detectable=true
-*.* linguist-detectable=false
+*.* linguist-detectable=true
 
 
 ###############################################################################
