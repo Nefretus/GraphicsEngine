@@ -13,11 +13,12 @@ void GameMap::CreatePipes(float xPosition) {
     const GLuint width = window.getWidth();
     float gapYSize = 0.25f * height;
     float gapXSize = 50.0f;
-    float gapYPos = (float)(rand() % (int)(height - 2.9 * gapYSize) + (gapYSize - height/9));
-    glm::vec2 lowerPipePos{xPosition, 0.0f};
-    glm::vec2 lowerPipeSize{ gapXSize, gapYPos };
-    glm::vec2 upperPipePos{ xPosition, gapYPos + gapYSize};
-    glm::vec2 upperPipeSize{ gapXSize, height -  (gapYPos + gapYSize)};
+    float constantGapYSize  = height / 2;
+    float gapYPos = (float)(rand() % (int)(height - 2.9 * gapYSize) + (gapYSize - height / 9));
+    glm::vec2 lowerPipePos{ xPosition, gapYPos - constantGapYSize };
+    glm::vec2 lowerPipeSize{ gapXSize, constantGapYSize };
+    glm::vec2 upperPipePos{ xPosition, gapYPos + gapYSize };
+    glm::vec2 upperPipeSize{ gapXSize, constantGapYSize };
     pipes.push_back(GameObject(lowerPipePos, lowerPipeSize));
     pipes.push_back(GameObject(upperPipePos, upperPipeSize));
 }
