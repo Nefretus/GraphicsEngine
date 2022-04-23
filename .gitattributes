@@ -37,7 +37,6 @@
 
 *.cpp linguist-detectable=true
 *.* linguist-detectable=false
-*.html linguist-detectable=false
 
 
 ###############################################################################
