@@ -1,6 +1,6 @@
 # Description
-This repository containts development of graphics engine aimed to serve as an educational project for learning computer graphics. Currently, engine provides: 
-rendering system, input polling, events and asset menager. Repo also includes an example app in the form of a simple platform game to present capabilities of 
+This repository contains development of graphics engine aimed to serve as an educational project for learning computer graphics. Currently, engine provides: 
+rendering system, input polling, events and asset manager. Repo also includes an example app in the form of a simple platform game to present capabilities of 
 an engine. Technologies used in the project are C++ and OpenGL.
 
 # Installation
