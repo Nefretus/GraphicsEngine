@@ -11,3 +11,7 @@ Project was developed on Windows platform. In order to compile this program it i
    ```
 2. Open solution file in Visual Studio.
 3. Press 'Local Windows Debugger'.
+
+## Sample game screenshots
+![](Resources/images/scr1.png)
+![](Resources/images/scr2.png)
