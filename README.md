@@ -5,6 +5,7 @@ an engine. Technologies used in the project are C++ and OpenGL.
 
 # Installation
 Project was developed on Windows platform. In order to compile this program it is required to have Visual Studio 2017 or 2019.
+
 1. Clone the repo
    ```sh
    https://github.com/Nefretus/GraphicsEngine.git
